@@ -1,2 +1,2 @@
 # mysite
-Blog MR.Yang
+Blog Thanks MR.Yang
