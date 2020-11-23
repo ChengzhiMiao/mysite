@@ -31,6 +31,8 @@ INSTALLED_APPS = [
     'comment',
     'likes',
     'user',
+    'notifications',
+    'my_notifications',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +60,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'user.context_processors.login_modal_form',
             ],
         },
     },
@@ -142,4 +143,9 @@ CACHES = {
         'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
         'LOCATION': 'my_cache_table',
     }
+}
+
+# django-notifications-hq设置
+DJANGO_NOTIFICATIONS_CONFIG = {
+    'USE_JSONFIELD': True,
 }
